@@ -40,6 +40,7 @@
 						<li><a href="#ui">前端开发</a></li>
 						<li><a href="#ria">RIA</a></li>
 						</ul>
+						<p class="navbar-text pull-right">Follow me @<a href="https://github.com/iimax">github</a></p>
 					</div>
 				</div>
 			</div>
@@ -64,11 +65,29 @@
 					</ul>
 				</div>
 				<div class="span9">
-					<div class="hero-unit">
-						<h1><small>&lt;h1&gt;</small>hello, world!</h1>
-						<p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-						<p><a class="btn btn-primary btn-large" id="btnShowDialog">点击查看 »</a></p>
+					
+					<!-- Carousel -->
+					<div id="myCarousel" class="carousel slide">
+					<div class="carousel-inner">
+					  <div class="item active">
+						<img src="slide2.gif" alt="">
+						<div class="carousel-caption">
+						  <h4><a href="https://github.com/iimax/DocViewer">DocViewer(with full source)</a></h4>
+						  <p>support Word Excel PPT(office 2003 2007 2010),PDF JPG and all plain text files.<a href="https://github.com/iimax/DocViewer" class="btn btn-primary btn-small">点击查看 »</a></p>
+						</div>
+					  </div>
+					  <div class="item">
+						<img src="dnsair.gif" alt="">
+						<div class="carousel-caption">
+						  <h4>DNSPod AIR</h4>
+						  <p>DNSPOD client with adobe AIR.</p>
+						</div>
+					  </div>
 					</div>
+					<a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+					<a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+				  </div>
+				  <!-- Carousel -->
 					<div class="row-fluid">
 						<div class="span12">
 							<!-- 选项卡-->
@@ -124,56 +143,69 @@
 					</div>
 				</div>
 			</div>
+			<footer>
+				<p>&copy; iimax,shenzhen</p>
+			</footer>
 		</div>
-		<div class="modal" id="myModal" style="display:none;">
-  <div class="modal-header">
-    <a class="close" data-dismiss="modal">×</a>
-    <h3>Login to reply</h3>
-  </div>
-  <div class="modal-body">
-    <p>
-		<form class="form-horizontal">
-		<div class="control-group">
-			<label class="control-label" for="focusedInput">E-mail:</label>
-			<div class="controls">
-			<input class="input-xlarge" id="focusedInput" type="text" placeholder="please input your email.">
-			</div>
-		</div>
-		</form>
-	</p>
-  </div>
-  <div class="modal-footer">
-    <a href="#" class="btn">关闭</a>
-    <a href="#" class="btn btn-primary">确定</a>
-  </div>
-</div>
+		<div id="myModal" class="modal hide fade">
+            <div class="modal-header">
+              <a class="close" data-dismiss="modal" >&times;</a>
+              <h3>Modal Heading</h3>
+            </div>
+            <div class="modal-body">
+              <h4>Text in a modal</h4>
+              <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem.</p>
+
+              <h4>Popover in a modal</h4>
+              <p>This <a id="popover_test" href="#" class="btn" rel="popover" title="A Title" data-content="And here's some amazing content. It's very engaging. right?">button</a> should trigger a popover on hover.</p>
+
+              <h4>Tooltips in a modal</h4>
+              <p><a href="#" class="tooltip-test" title="Tooltip">This link</a> and <a href="#" class="tooltip-test" title="Tooltip">that link</a> should have tooltips on hover.</p>
+
+              <hr>
+
+              <h4>Overflowing text to show optional scrollbar</h4>
+              <p>We set a fixed <code>max-height</code> on the <code>.modal-body</code>. Watch it overflow with all this extra lorem ipsum text we've included.</p>
+              <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+              <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+              <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+              <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+            </div>
+            <div class="modal-footer">
+              <a href="#" class="btn" data-dismiss="modal" >Close</a>
+              <a href="#" class="btn btn-primary">Save changes</a>
+            </div>
+          </div>
 		<!-- container End!-->
 
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="http://twitter.github.com/bootstrap/assets/js/jquery.js"></script>
-    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-transition.js"></script>
-    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-alert.js"></script>
-    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-modal.js"></script>
-    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-dropdown.js"></script>
-    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-scrollspy.js"></script>
-    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-tab.js"></script>
-    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-tooltip.js"></script>
-    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-popover.js"></script>
-    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-button.js"></script>
-    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-collapse.js"></script>
-    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-carousel.js"></script>
-    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-typeahead.js"></script>
+    <script src="docs/assets/js/jquery.js"></script>
+    <script src="docs/assets/js/bootstrap-transition.js"></script>
+    <script src="docs/assets/js/bootstrap-alert.js"></script>
+    <script src="docs/assets/js/bootstrap-modal.js"></script>
+    <script src="docs/assets/js/bootstrap-dropdown.js"></script>
+    <script src="docs/assets/js/bootstrap-scrollspy.js"></script>
+    <script src="docs/assets/js/bootstrap-tab.js"></script>
+    <script src="docs/assets/js/bootstrap-tooltip.js"></script>
+    <script src="docs/assets/js/bootstrap-popover.js"></script>
+    <script src="docs/assets/js/bootstrap-button.js"></script>
+    <script src="docs/assets/js/bootstrap-collapse.js"></script>
+    <script src="docs/assets/js/bootstrap-carousel.js"></script>
+    <script src="docs/assets/js/bootstrap-typeahead.js"></script>
 	<script type="text/javascript">
 	$(document).ready(function(){
-		$("#btnShowDialog").click(function(){
+		/*$("#btnShowDialog").click(function(){
 			$("#myModal").modal('show');
-		});
+		});*/
 		$("#myModal").on('shown',function(e){
 			$("input:first",this).focus();
 		});
-		
+		$("#popover_test").popover();
+		$("#myCarousel").carousel({interval:4000});
 	});
 	</script>
 	</body>
