@@ -145,7 +145,7 @@
 				</div>
 			</div>
 			<footer>
-				<p>&copy; iimax,shenzhen</p>
+				<p>&copy; iimax,shenzhen <span id="qqLoginBtn"></span></p>
 			</footer>
 		</div>
 		<div id="myModal" class="modal hide fade">
@@ -197,7 +197,10 @@
 	<script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-collapse.js"></script>
 	<script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-carousel.js"></script>
 	<script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-typeahead.js"></script>
-	<script type="text/javascript">
+    <script type="text/javascript"
+src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="100292199" data-redirecturi="iimax.github.com/api.html" charset="utf-8"></script>
+	
+    <script type="text/javascript">
 	$(document).ready(function(){
 		/*$("#btnShowDialog").click(function(){
 			$("#myModal").modal('show');
@@ -206,7 +209,10 @@
 			$("input:first",this).focus();
 		});
 		$("#popover_test").popover();
-		$("#myCarousel").carousel({interval:4000});
+		$("#myCarousel").carousel({ interval: 4000 });
+		QC.Login({
+		    btnId: "qqLoginBtn"	//插入按钮的节点id
+		});
 	});
 	</script>
 	</body>

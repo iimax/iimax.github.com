@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>QQ登录回调</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<meta name="description" content="iimax"/>
+		<meta name="author" content="iImax" />
+		<link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet"/>
+		<style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+		<link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet"/>
+		
+		 <!--[if lt IE 9]>
+		  <script src="html5.js"></script>
+		<![endif]-->
+		<!-- Le fav and touch icons -->
+		<link rel="shortcut icon" href="http://twitter.github.com/bootstrap//assets/ico/favicon.ico"/>
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png"/>
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png"/>
+		<link rel="apple-touch-icon-precomposed" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png"/>
+	</head>
+	<body>
+		<div class="navbar navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a>
+					<a class="brand" href="#">iImax</a>
+					<div class="nav-collapse">
+						<ul class="nav">
+						<li class="active"><a href="#">首页</a></li>
+						<li><a href="#tag">标签</a></li>
+						<li><a href="#ui">前端开发</a></li>
+						<li><a href="#ria">RIA</a></li>
+						</ul>
+						<p class="navbar-text pull-right">Hi,<span id="spQQ"></span>! Follow me @<a href="https://github.com/iimax">github</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- container begin! 流布局 -->
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<!-- 左右 1:3 -->
+				<div class="span3">
+					<!-- 导航 nav list -->
+					<ul class="nav nav-list">
+						<li class="nav-header">welcome</li>
+						<li class="active"><a href="#"><i class="icon-white icon-home"></i>iImax</a></li>
+						<li><a href="#"><i class="icon-book"></i> Library</a></li>
+						<li><a href="#"><i class="icon-pencil"></i> Applications</a></li>
+						<li class="nav-header">Another list header</li>
+						<li><a href="#"><i class="icon-user"></i> Profile</a></li>
+						<li><a href="#"><i class="icon-cog"></i> Settings</a></li>
+						<li class="divider"></li>
+						<li><a href="#"><i class="icon-flag"></i> Help</a></li>
+					</ul>
+				</div>
+				<div class="span9">
+					
+				</div>
+			</div>
+			<footer>
+				<p>&copy; iimax,shenzhen</p>
+			</footer>
+		</div>
+		<!-- container End!-->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/jquery.js"></script>
+	<script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-button.js"></script>
+    <script type="text/javascript"
+src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" charset="utf-8" data-callback="true"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var _f = QC.Login.check();
+            if (_f) { $('#spQQ').text('登录成功！'); }
+            else { $('#spQQ').html('请<a href="index.html">登录</a>体验QQ！'); }
+        });
+	</script>
+	</body>
+</html>
