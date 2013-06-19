@@ -68,7 +68,12 @@
 					<div class="row-fluid">
 						<div class="span12">
 							<!-- 选项卡-->
-							<input type="button' value="淘宝API登录"/>
+							<input type="button" value="淘宝API登录"/>
+							<h2><a href="https://oauth.taobao.com/authorize?response_type=code&client_id=21551528&redirect_uri=http://iimax.github.io/top.html">OAUTH2.0登录</a></h2>
+ </br>以上链接为通过OAUTH2.0方式登陆演示：</br>1、通过用户授权获取授权码Code；
+ </br>2、用上一步获取的Code和应用密钥（AppSecret）通过Https Post方式换取Token；
+ </br>3、通过返回的access_Token调用api返回数据。
+ <div id="topapi_result"></div>
 						</div>
 					</div>
 				</div>
@@ -133,7 +138,7 @@
 			$("input:first",this).focus();
 		});
 		$("#popover_test").popover();
-		
+		 if(window.location.hash!=""){$('#topapi_result').html(window.location.hash)}
 	});
 	</script>
 	</body>
