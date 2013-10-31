@@ -1,0 +1,63 @@
+body,p,.topBar h2,.topBar ul,.topBar li,.topBar dl,.topBar dt,.topBar dd{margin:0; padding:0}
+.banner{border-bottom:1px solid #e9e9e9;background:url(../imgs//topBar.jpg) repeat-x;padding-top:2px;color:#5c5c5c;height:36px}
+.topBar li{list-style:none;}
+.topBar{width:1000px;margin:0 auto;height:35px;font:12px/35px "simsun";position:relative;z-index:10;*zoom:1}
+.topBar:after{content:"";display:table;clear:both}
+.topBar a{text-decoration:none; color:#5c5c5c}
+.topBar a:hover{color:#000}
+#loginWrap a:hover{color:#fff}
+#loginWrap dl a:hover{color:#000}
+.siteNav{float:left;}
+#site_nav_title,#channel_nav_title{display:none}
+.siteNav ul{padding-left:3px;}
+.siteNav li{margin:0 9px;float:left; display:inline}
+.siteNav .mini_goIndex{margin-left:0}
+
+.banner .button{padding:0 21px 0 9px;float:left;cursor:pointer;background:url(../imgs/sNP2Btn.png) no-repeat 38px 15px;border:1px solid #f8f8f8;border-width:0 1px; height:35px; overflow:hidden;}
+
+.banner .buttonHover{border-left:1px solid #e8e8e8;border-right:1px solid #e8e8e8;border-top:1px solid #fff;border-bottom:1px solid #fff;line-height:33px;height:34px;background:#fff url(../imgs
+	/sNP2BtnHover.png) no-repeat 38px 14px; overflow:hidden}
+
+.expandedPanel{width:89px;position:absolute;top:36px;background:#fff; text-align:center; font:12px/30px "simsun"; border:1px solid #e8e8e8; border-width:0 1px 1px; display:none}
+.expandedPanel a{display:block}
+.expandedPanel a:hover{ background:#f1f1f1; text-decoration:none}
+#siteNavPart2{left:282px;}
+#siteNavPart2:focus,#helpLinks:focus{outline:none}
+#siteNavPart2 li,#helpLinks li{ width:89px; height:30px; float:left; clear:both;}
+#siteMap{ position:relative; line-height:16px}
+#helpLinks{left:419px}
+
+.topBar .tools{float:left;border-left:1px solid #dadada;height:14px;line-height:14px; margin:9px 0 0 7px; padding-left:9px; height:14px;}
+.topBar .tools a{margin:0 9px 0 7px;float:left;display:inline}
+
+.login{float:right;position:absolute;top:0;right:0;text-align:center}
+#oneKey{float:left; width:73px; text-align:center;border:1px solid #e6e6e6;border-width:0 1px; cursor:pointer}
+#xy-service{float:left; text-align:center;border:1px solid #e6e6e6;border-width:0 1px; cursor:pointer;height:35px;}
+#xy-service img{padding-top: 5px;}
+.quickArea{position:relative; float:left}
+.quickLink{float:left; height:35px; display:block;padding:0 6px 0 27px;overflow:hidden;background:url(../imgs/aaa.jpg) no-repeat;}
+.quickLink em{display:none}
+.quickLink:hover{text-decoration:none;}
+
+.weiboLink{background-position:0 0}
+.qzoneLink{background-position:0 -35px}
+.qmailLink{background-position:0 -70px}
+.weiboLink:hover,.weiboSucceed{background-position:0 -280px}
+.qzoneLink:hover,.qzoneSucceed{background-position:0 -315px}
+.qmailLink:hover,.qmailSucceed{background-position:0 -350px}
+
+.weiboSucceed:hover{background-position:0 -140px;background-color:#cb1b1b}
+.qzoneSucceed:hover{background-position:0 -175px;background-color:#cb1b1b}
+.qmailSucceed:hover{background-position:0 -210px;background-color:#cb1b1b}
+
+.infoNum{font:12px/36px "simsun"; text-indent:4px;  text-decoration:none; display:block}
+.quickArea dl{ width:110px; padding:6px 14px; background:#fff; position:absolute; top:36px;font:12px/23px "simsun"; border:1px solid #e8e8e8; border-width:0 1px 1px; text-align:left; color:#5b5b5b; display:none}
+.quickArea dl a span{ color:#ec7501;margin-left:4px;font-weight:bold;}
+.loginNav { float:left }
+#login_layer_bg{width:100%;position:absolute;top:0;left:0;z-index:9999;background:url(../imgs/alphabg.png); _background:#000;_opacity:0.3;_filter:alpha(opacity=30); height:100% }
+#login_layer_main { position:fixed; _position:absolute; width:490px; height:382px;top:50%; left:50%; margin:-165px 0 0 -276px; z-index:10000 }
+/* user */
+#loginWrap #loginOut:hover{color:#000}
+@media screen and (max-width:1024px){
+.banner{ width: 1000px; }
+}

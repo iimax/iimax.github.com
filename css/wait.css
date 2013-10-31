@@ -1,0 +1,30 @@
+/*排序*/
+.channelBoxTc{width:583px;height:298px; border:solid 3px #c2c2c2;border-radius:3px;	 background:#fff; position:fixed;left:500px; top:200px;  z-index:10001;overflow:hidden;}
+.channelBoxTc .chd{height:47px; border-bottom:solid 2px #efeeee;line-height:47px;}
+.channelBoxTc .chd h2{width:106px;font-size:16px; float:left; font-family:"微软雅黑"; text-align:center; }
+.channelBoxTc .chd p{width:280px; float:left; font-size:12px;color:#999999;}
+.channelBoxTc .chd .close{width:22px;height:22px; background:url(http://mat1.gtimg.com/news/aber/2013/img/paixubg1.png) no-repeat; float:right; margin:14px 17px 0 0 ; display:inline; cursor:pointer}
+.channelBoxTc .chd .close:hover{background:url(http://mat1.gtimg.com/news/aber/2013/img/paixubg1.png) -51px top no-repeat;}
+.channelBoxTc .cbd{height:195px;overflow:hidden;position:relative;}
+.channelBoxTc .baocun{width:99px;height:36px; background:#d94242; color:#fff; float:left;
+margin:0 15px 0 350px; display:inline;text-align:center; line-height:36px;cursor:pointer;font-family:"微软雅黑";font-size:16px;}
+.channelBoxTc .baocun:hover{background:#ca3030; }
+.channelBoxTc .quxiao{width:99px;height:36px; background:#c5c5c5; color:#fff;float:left;
+ display:inline;text-align:center; line-height:36px;cursor:pointer; font-family:"微软雅黑";font-size:16px;}
+.channelBoxTc .quxiao:hover{background:#aeaeae;}
+/*订阅二期css2012-12-10*/
+.subscribe{width:583px; height:195px;overflow:hidden;border-top:2px solid #4973a8;background:#fff; position:absolute;top:0;left:0px;z-index:9999  }
+.subscribe .mycustom{width:100%;height:96px; margin:0 auto;background-position: 0 0; }
+.subscribe .conlib{width:583px;height:100px;}
+.subscribe .mycustom h4{height:41px;color:#999999;font-size:12px;font-weight:normal;padding-left:16px; line-height:52px;overflow:hidden;  }
+.subscribe .conlib h4{height:41px; border-top:solid 1px #ccc; color:#999999;font-size:12px;font-weight:normal;padding-left:2px; line-height:52px;overflow:hidden; margin:0 15px;}
+.subscribe .bd ul{width:500px; padding-left:15px; padding-top:20px; top:-20px; overflow:hidden;*zoom:1; position:relative;height:250px;}
+.subscribe .conlib ul{float:left;padding-top:3px;*padding-bottom:10px;_padding-bottom:10px;  }
+.subscribe .bd li{background:#fff url(http://mat1.gtimg.com/news/aber/2013/img/paixubg1.png) 60px -146px no-repeat;float:left;width:71px;height:33px;display:inline;margin:0px 7px 70px 0px; border:solid 1px #dfdfdf; color:#020202; font-size:14px; text-align:center;line-height:33px;cursor:move }
+.subscribe .bd li.cur{background:#fff url(http://mat1.gtimg.com/news/aber/2013/img/paixubg1.png) 60px -247px no-repeat; }
+.subscribe .maskLayer{width:73px; height:35px;  opacity:0.8; visibility:hidden; position:absolute; z-index:1000; cursor:move}
+.subscribe .bd li a{width:100%; height:33px; display:block;}
+.subscribe .bd li a:hover{color:#020202}
+.subscribe .maskLayer ul{ margin:0; padding:0; width:auto}
+.subscribe li.dragItem{ margin:0;cursor:move;background:#fff url(http://mat1.gtimg.com/news/aber/2013/img/paixubg1.png) 60px -247px no-repeat; }
+.subscribe .bd li.opa{ opacity:0.4; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=40); }
