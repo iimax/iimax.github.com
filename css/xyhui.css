@@ -1,4 +1,4 @@
-@charset "gb2312";/* CSS Document */
+@charset "utf-8";/* CSS Document */
 a{outline:none}
 .layout{width:1000px}
 .Q-g16b-b .chief{width:670px;padding-right:15px;border-right:1px solid #eaeaea}
@@ -318,3 +318,16 @@ div.searchautobox{ position:static; }
 #topMove .hd i.forStyle{ _background:none; }
 #moreNewsBtn span{ display:block }
 #sittingExtraBtn{ _display:none; }
+
+ul.newslist {
+margin-left: 54px;
+padding: 14px 0;
+}
+.newslist li {
+line-height: 24px;
+color: #0B3B8D;
+font-size: 18px;
+font: normal small-caps normal 18px "Microsoft YaHei";
+padding-top:4px;
+list-style-type: square;
+}
