@@ -17,7 +17,7 @@
 			<div role="navigation" aria-labelledby="site_nav_title" aria-owns="siteNavPart1 siteNavPart2">
 				<ul id="siteNavPart1">
 					<li class="mini_goIndex"><a href="http://www.xyhui.net/" target="_blank" accesskey="1">襄阳汇首页</a></li>
-					<li><a href="http://news.xyhui.net/" target="_blank">新闻</a></li>
+					<li><a href="http://www.xyhui.net/news/" target="_blank">新闻</a></li>
 					<li><a href="http://www.xyhui.net/jiajucheng/" target="_blank">家具城</a></li>
 					<li><a href="http://www.xyhui.net/jiancai/" target="_blank">建材市场</a></li>
 					<li><a href="http://www.xyhui.net/zhuangxiu/" target="_blank">装修攻略</a></li>
@@ -25,25 +25,9 @@
 				</ul>
 			</div>
 		</div>
-		<span role="button" aria-expanded="true" aria-pressed="false" id="sNP2Btn" class="button ">更多</span>
-		<ul id="siteNavPart2" aria-disabled="true" aria-hidden="true" tabindex="-1" class="expandedPanel" style="display: none;">
-			<li><a href="#" target="_blank">视频</a></li>
-			<li><a href="#" target="_blank">汽车</a></li>
-			<li><a href="#" target="_blank">房产</a></li>
-			<li><a href="#" target="_blank">时尚</a></li>
-			<li><a href="#" target="_blank">文化</a></li>
-		</ul>
 		<div class="tools">
 			<a href="#" id="siteMap" target="_blank">网站地图</a>
 		</div>
-		<span role="button" aria-expanded="true" aria-pressed="false" id="helpBtn" class="button ">帮助</span>
-		
-		<ul id="helpLinks" aria-disabled="true" aria-hidden="true" tabindex="-1" class="expandedPanel" style="display: none;">
-			<li><a href="#" target="_blank">腾讯客服</a></li>
-			<li><a href="#" target="_blank">反馈建议</a></li>
-			<li><a href="#" target="_blank">帮助中心</a></li>
-		</ul>
-		
 		</div>
 		<div class="login" id="loginWrap">
 			<div class="quickArea menu">
@@ -66,45 +50,6 @@
 </div>
 
 <script type="text/javascript" src="js/js1.js"></script>
-
-<script>
-UI.each(UI.$$('button', 'span', UI.$('loginNav')), function(obj, index){
-	UI.addEvent(obj, 'mouseover', function(){
-		var menu_bd = UI.$$('expandedPanel', 'ul', UI.$('loginNav'))[index]
-		
-		clearTimeout(obj.timer_out);
-	
-		obj.timer = setTimeout(function(){
-			UI.addClass(obj, 'buttonHover');
-			menu_bd.style.display = 'block';
-		}, 25);
-
-	});
-
-	UI.addEvent(obj, 'mouseout', function(){
-		var menu_bd = UI.$$('expandedPanel', 'ul', UI.$('loginNav'))[index];
-		obj.timer_out = setTimeout(function(){
-			UI.removeClass(obj, 'buttonHover');
-			menu_bd.style.display = 'none';
-		}, 25);
-		
-		UI.addEvent(menu_bd, 'mouseover', function(){
-			clearTimeout(obj.timer_out);
-			obj.timer = setTimeout(function(){
-				UI.addClass(obj, 'buttonHover');
-				menu_bd.style.display = 'block';
-			}, 25);
-		});
-		UI.addEvent(menu_bd, 'mouseout', function(){
-			clearTimeout(obj.timer_in);
-			obj.timer_out = setTimeout(function(){
-				UI.removeClass(obj, 'buttonHover');
-				menu_bd.style.display = 'none';
-			}, 25);
-		});
-	});
-});
-</script>
 <div id="newsBanner" class="cf">
 	<!--<div class="ad_1000_90" aria-disabled="true" tabindex="-1" bosszone="ad1">
 <div id="News_Width1" style="width: 1000px; height: 90px; display: block; position: relative;" class="l_qq_com">
@@ -169,24 +114,11 @@ UI.each(UI.$$('button', 'span', UI.$('loginNav')), function(obj, index){
 <div style="width:1000px;height:40px;margin:0 auto;position:relative">
 <a href="http://wpa.qq.com/msgrd?v=3&uin=2500750091&site=qq&menu=yes" target="_blank"><img src="imgs/yage.jpg"></a>
 </div>
-
-<div id="weatherItem">
-<div id="weatherWrap">
-<span id="echoData">2013年10月24日</span>
-<span id="echoWeek">星期四</span>
-<a href="http://weather.news.qq.com/" target="_blank" bosszone="weather">
-<span id="wCity">深圳</span>
-<span id="weatherIco"><img src="http://mat1.gtimg.com/news/newsweather/wIco/sun.png"> </span>
-<span id="wTp">27℃</span>
-</a>
-</div>
-	<div id="breakingNews" role="region" tabindex="”-1”" style="display: none; position: fixed; top: 0px; left: auto;">
+<div id="breakingNews" role="region" tabindex="”-1”" style="display: none; position: fixed; top: 0px; left: auto;">
 		<em><strong>最新消息</strong>： <a href="#" target="_blank">暂无重要突发新闻</a><span></span></em>
 				<div></div>
 		<i role="button" tabindex="0" aria-pressed="false" title="关闭最新消息"></i>
 	</div>
-</div>
-
 <div class="layout Q-g16b-b">
 	<div class="chief" role="main">
 		<div id="headingNews" bosszone="toutiaozhengti">
