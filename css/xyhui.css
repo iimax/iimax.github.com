@@ -14,7 +14,7 @@ a{outline:none}
 .ad_1000_90:focus{outline:none}
 /*branding*/
 /**/
-#weatherItem{width:1000px;height:42px;margin:0 auto;font:12px/48px "宋体","Arial Narrow",HELVETICA; color:#4c4c4c;position:relative; z-index:102}
+#weatherItem{width:1000px;height:12px;margin:0 auto;font:12px/48px "宋体","Arial Narrow",HELVETICA; color:#4c4c4c;position:relative; z-index:102}
 #weatherWrap{height:42px; overflow:hidden; width:500px;}
 #echoData{padding:0 14px 0 24px;}
 #echoWeek{padding-right:18px}
@@ -319,6 +319,7 @@ div.searchautobox{ position:static; }
 #moreNewsBtn span{ display:block }
 #sittingExtraBtn{ _display:none; }
 
+/*xyhui*/
 ul.newslist {
 margin-left: 54px;
 padding: 14px 0;
@@ -331,3 +332,8 @@ font: normal small-caps normal 18px "Microsoft YaHei";
 padding-top:4px;
 list-style-type: square;
 }
+div.news-bd { margin-top: 35px;
+font-size: 16px;
+line-height: 28px; }
+div.news-bd p{margin-bottom: 20px;}
+div.author{text-align: left;}

@@ -1,23 +1,23 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>新闻资讯_襄阳汇</title>
-<meta name="keywords" content="襄阳建材市场,襄阳大建材市场">
-<meta name="description" content="建材市场,包含襄阳各大建材市场、店铺。有华中光彩大市场、天丽国际家居建材博览中心、南方家具、南方家具、中南板材">
+<meta name="keywords" content="襄阳汇新闻中心,襄阳汇">
+<meta name="description" content="襄阳每日新闻,襄阳汇">
 <link href="../css/base.src.css" rel="stylesheet" type="text/css"/>
 <link href="../css/xyhui.css" rel="stylesheet" type="text/css"/>
 <script src="../js/Koala.min.1.5.js" type="text/javascript"></script>  
 <body id="body">
 <link href="../css/my.css" rel="stylesheet" type="text/css"/>
 <div class="banner" id="topNav">
-	<div class="topBar" bosszone="topBar">
+	<div class="topBar">
 		<div class="loginNav" id="loginNav">
 		<div class="siteNav">
 			<h2 id="site_nav_title">襄阳汇导航</h2>
 			<div role="navigation" aria-labelledby="site_nav_title" aria-owns="siteNavPart1 siteNavPart2">
 				<ul id="siteNavPart1">
 					<li class="mini_goIndex"><a href="http://www.xyhui.net/" target="_blank" accesskey="1">襄阳汇首页</a></li>
-					<li><a href="http://news.xyhui.net/" target="_blank">新闻</a></li>
+					<li><a href="http://www.xyhui.net/news/" target="_blank">新闻</a></li>
 					<li><a href="http://www.xyhui.net/jiajucheng/" target="_blank">家具城</a></li>
 					<li><a href="http://www.xyhui.net/jiancai/" target="_blank">建材市场</a></li>
 					<li><a href="http://www.xyhui.net/zhuangxiu/" target="_blank">装修攻略</a></li>
@@ -25,24 +25,9 @@
 				</ul>
 			</div>
 		</div>
-		<span role="button" aria-expanded="true" aria-pressed="false" id="sNP2Btn" class="button ">更多</span>
-		<ul id="siteNavPart2" aria-disabled="true" aria-hidden="true" tabindex="-1" class="expandedPanel" style="display: none;">
-			<li><a href="#" target="_blank">视频</a></li>
-			<li><a href="#" target="_blank">汽车</a></li>
-			<li><a href="#" target="_blank">房产</a></li>
-			<li><a href="#" target="_blank">时尚</a></li>
-			<li><a href="#" target="_blank">文化</a></li>
-		</ul>
 		<div class="tools">
 			<a href="#" id="siteMap" target="_blank">网站地图</a>
 		</div>
-		<span role="button" aria-expanded="true" aria-pressed="false" id="helpBtn" class="button ">帮助</span>
-		
-		<ul id="helpLinks" aria-disabled="true" aria-hidden="true" tabindex="-1" class="expandedPanel" style="display: none;">
-			<li><a href="#" target="_blank">腾讯客服</a></li>
-			<li><a href="#" target="_blank">反馈建议</a></li>
-			<li><a href="#" target="_blank">帮助中心</a></li>
-		</ul>
 		
 		</div>
 		<div class="login" id="loginWrap">
@@ -66,47 +51,8 @@
 </div>
 
 <script type="text/javascript" src="../js/js1.js"></script>
-
-<script>
-UI.each(UI.$$('button', 'span', UI.$('loginNav')), function(obj, index){
-	UI.addEvent(obj, 'mouseover', function(){
-		var menu_bd = UI.$$('expandedPanel', 'ul', UI.$('loginNav'))[index]
-		
-		clearTimeout(obj.timer_out);
-	
-		obj.timer = setTimeout(function(){
-			UI.addClass(obj, 'buttonHover');
-			menu_bd.style.display = 'block';
-		}, 25);
-
-	});
-
-	UI.addEvent(obj, 'mouseout', function(){
-		var menu_bd = UI.$$('expandedPanel', 'ul', UI.$('loginNav'))[index];
-		obj.timer_out = setTimeout(function(){
-			UI.removeClass(obj, 'buttonHover');
-			menu_bd.style.display = 'none';
-		}, 25);
-		
-		UI.addEvent(menu_bd, 'mouseover', function(){
-			clearTimeout(obj.timer_out);
-			obj.timer = setTimeout(function(){
-				UI.addClass(obj, 'buttonHover');
-				menu_bd.style.display = 'block';
-			}, 25);
-		});
-		UI.addEvent(menu_bd, 'mouseout', function(){
-			clearTimeout(obj.timer_in);
-			obj.timer_out = setTimeout(function(){
-				UI.removeClass(obj, 'buttonHover');
-				menu_bd.style.display = 'none';
-			}, 25);
-		});
-	});
-});
-</script>
 <div id="newsBanner" class="cf">
-	<!--<div class="ad_1000_90" aria-disabled="true" tabindex="-1" bosszone="ad1">
+	<!--<div class="ad_1000_90" aria-disabled="true" tabindex="-1">
 <div id="News_Width1" style="width: 1000px; height: 90px; display: block; position: relative;" class="l_qq_com">
 	<a href="#" target="_blank" style="display:block;cursor:pointer;width:1000px;height:90px;background-image:url(../ad/Oz_NW_201310234635.jpg);"></a>
 	<a class="absolute a_cover" href="#" target="_blank" rel="nofollow" style="position:absolute;width:1000px;height:90px;left:0px;top:0px;cursor:pointer;z-index:10;background-color:#fff;filter:alpha(opacity=0);opacity:0;"></a>
@@ -147,7 +93,7 @@ UI.each(UI.$$('button', 'span', UI.$('loginNav')), function(obj, index){
 
 <div class="branding">
 	<h1>
-	<a href="javascript:void(0)">襄阳汇——家装建材参考<img src="imgs/logo.gif"></a></h1>
+	<a href="javascript:void(0)">襄阳汇——家装建材参考<img src="../imgs/logo.gif"></a></h1>
 	
 	<div><img src="http://placehold.it/700x58&text=Welcome!" alt="襄阳汇"/></div>
 </div>
@@ -155,13 +101,14 @@ UI.each(UI.$$('button', 'span', UI.$('loginNav')), function(obj, index){
 	<h2 id="channel_nav_title">网站导航</h2>
 	<div role="navigation" tabindex="0" id="navigation">
 		<ul id="channelNavPart" class="channelNavPart">
-			<li id="newsIndexLink"><a href="http://www.xyhui.net/" target="_blank" class="current">首页</a></li>
-			<li><a href="http://www.xyhui.net/jiajucheng/" target="_blank" class="linkRoll">家具城</a></li>
-			<li><a href="http://www.xyhui.net/jiancai/" target="_blank" class="navlinkChina">建材市场</a></li>
-			<li><a href="http://www.xyhui.net/zhuangxiu/" target="_blank" class="navlinkWorld">装修攻略</a></li>
-			<li><a href="http://www.xyhui.net/gongsi/" target="_blank" class="navlinkSociety">逛商家</a></li>
-			<li><a href="http://www.xyhui.net/tuangou/" target="_blank" class="navlinkPhoto">找团购</a></li>
-			<li><a href="http://www.xyhui.net/anli/" target="_blank" class="navlinkVideo">装修案例</a></li>
+			<li id="newsIndexLink"><a href="http://www.xyhui.net/" class="">首页</a></li>
+			<li><a href="http://www.xyhui.net/jiajucheng/" class="linkRoll">家具城</a></li>
+			<li><a href="http://www.xyhui.net/jiancai/" class="navlinkChina">建材市场</a></li>
+			<li><a href="http://www.xyhui.net/zhuangxiu/" class="navlinkWorld">装修攻略</a></li>
+			<li><a href="http://www.xyhui.net/gongsi/" class="navlinkSociety">逛商家</a></li>
+			<li><a href="http://www.xyhui.net/tuangou/" class="navlinkPhoto">找团购</a></li>
+			<li><a href="http://www.xyhui.net/anli/" class="navlinkVideo">装修案例</a></li>
+			<li><a href="http://www.xyhui.net/news/" class="navlinkVideo current">新闻</a></li>
 		</ul>
 	</div>
 </div>
@@ -169,13 +116,13 @@ UI.each(UI.$$('button', 'span', UI.$('loginNav')), function(obj, index){
 <div style="width:1000px;height:40px;margin:0 auto;position:relative">
 <a href="http://wpa.qq.com/msgrd?v=3&uin=2500750091&site=qq&menu=yes" target="_blank"><img src="../imgs/yage.jpg"></a>
 </div>
-
+<div id="breakingNews" role="region" tabindex="”-1”" style="display: none; position: fixed; top: 0px; left: auto;">
+	<em><strong>最新消息</strong>： <a href="#" target="_blank">暂无重要突发新闻</a><span></span></em>
+			<div></div>
+	<i role="button" tabindex="0" aria-pressed="false" title="关闭最新消息"></i>
+</div>
 <div id="weatherItem">
-	<div id="breakingNews" role="region" tabindex="”-1”" style="display: none; position: fixed; top: 0px; left: auto;">
-		<em><strong>最新消息</strong>： <a href="#" target="_blank">暂无重要突发新闻</a><span></span></em>
-				<div></div>
-		<i role="button" tabindex="0" aria-pressed="false" title="关闭最新消息"></i>
-	</div>
+	
 </div>
 
 <div class="layout Q-g16b-b">
@@ -185,55 +132,167 @@ UI.each(UI.$$('button', 'span', UI.$('loginNav')), function(obj, index){
 		<div id="news">
 			
 			<div class="bd" style="position: relative; z-index: 99;">
-   <div id="mainTabPanel0" tabindex="0" bosszone="" style="display: block;">
+   <div id="mainTabPanel0" tabindex="0" style="display: block;">
 
-		<div role="tabpanel" aria-hidden="false" id="mainTabPanel" tabindex="0" bosszone="news">
-<div class="Q-pList" style="z-index:96">
-<ul class="l26" bosszone="news1">
-<li class="pic"><a target="_blank" href="#"><img src="news01.jpg"></a></li>
-<li class="pic"><a target="_blank" href="#"><img src="news02.jpg"></a></li>
-<li class="pic"><a target="_blank" href="#"><img src="news01.jpg"></a></li>
-</ul>
-</div>
-	<div class="Q-tpList" style="z-index:95">
+		<div role="tabpanel" aria-hidden="false" id="mainTabPanel" tabindex="0">
+		<div class="Q-tpList" style="z-index:95">
 		<div class="Q-tpWrap">
-			<a target="_blank" class="pic" bosszone="news2" href="#">
-				<img class="picto" src="news01.jpg"></a><em class="f14 l24" bosszone="news2"><span><span class=""><a target="_blank" class="linkto" href="#">牛首中心小学学生走进松鹤路小学 体验不同生活</a></span></span></em><p class="l22">10月28日，30名牛首中心小学的学生走进松鹤路小学。当天，他们不仅与该校学生一起上课，还分别住进城里孩子的家中，体验不一样的生活。</p>
-</div></div>
-<div class="Q-tpList" style="z-index:94"><div class="Q-tpWrap">
-<a target="_blank" class="pic" href="#"><img class="picto" src="news02.jpg"></a><em class="f14 l24" bosszone="news3"><span><span class="icon_video"><a target="_blank" class="linkto" href="#">襄城污水处理示范点 “人工湿地”变身小花园</a></span></span></em><p class="l22">10月30日，在襄城尹集白云人家社区污水处理示范点，映入眼帘的是一片鲜花盛开的小花园。花园里，植物底部是“人工湿地”，水源是来自社区居民的生活污水。</p>
-</div></div>
-<div class="Q-tpList" style="z-index:94"><div class="Q-tpWrap">
-<a target="_blank" class="pic" bosszone="news3" href="#"><img class="picto" src="imgs/ad02.jpg"></a><em class="f14 l24" bosszone="news3"><span><span class="icon_video"><a target="_blank" class="linkto" href="#">襄阳中南板材市场</a></span></span></em><p class="l22">正旺装饰材料大市场将搬迁。正旺装饰材料大市场位于襄城环城东路243号，由原四季青居委会于1998年投资建设，2001年和2005年进行了扩建。市场占地面积6142平方米</p>
-</div></div>
+			<a target="_blank" class="pic" href="xiangyang-hongye.html">
+				<img class="picto" src="http://www.xiangyang.gov.cn/syts/slipe/201311/W020131108407598351612.jpg"></a><em class="f14 l24"><span><span class=""><a target="_blank" class="linkto" href="xiangyang-hongye.html">深秋红叶 层林尽染</a></span></span></em><p class="l22">11月的襄阳，山间层林尽染。1日，记者驱车在南漳县山区公路上看到，漫山遍野的红、黄、绿色，在秋雨的滋润下分外妖娆。目之所及，尽显“车在山间行，人在画中游”的意境。</p>
+		</div>
+	</div>
 <ul class="newslist l26 f14">
-	<li><a href="">襄阳7岁男娃通过测试跳至四年级</a></li>
-	<li><a href="">四中五中入选清华领军计划 高考可降60分录取</a></li>
-	<li><a href="">防汽车自燃三注意 不要随便改装汽车电路</a></li>
-	<li><a href="">四中五中入选清华领军计划 高考可降60分录取</a></li>
-	<li><a href="">四中五中入选清华领军计划 高考可降60分录取</a></li>
-</ul>
-<ul class="newslist l26 f14">
-	<li><a href="">襄阳7岁男娃通过测试跳至四年级</a></li>
-	<li><a href="">四中五中入选清华领军计划 高考可降60分录取</a></li>
-	<li><a href="">防汽车自燃三注意 不要随便改装汽车电路</a></li>
-	<li><a href="">四中五中入选清华领军计划 高考可降60分录取</a></li>
-	<li><a href="">四中五中入选清华领军计划 高考可降60分录取</a></li>
-</ul>
-<ul class="newslist l26 f14">
-	<li><a href="">襄阳7岁男娃通过测试跳至四年级</a></li>
-	<li><a href="">四中五中入选清华领军计划 高考可降60分录取</a></li>
-	<li><a href="">防汽车自燃三注意 不要随便改装汽车电路</a></li>
-	<li><a href="">四中五中入选清华领军计划 高考可降60分录取</a></li>
-	<li><a href="">四中五中入选清华领军计划 高考可降60分录取</a></li>
+<li><a href="news201311081.html">保康男子襄阳街头抢山寨“苹果”手机 获刑4年</a></li>
+<li><a href="news201311082.html">无需护照 乘邮轮可赴越南旅游</a></li>
+<li><a href="news201311083.html">保康黄堡镇两年前鼓励投资养鸭 事后取缔引质疑</a></li>
+<li><a href="news201311084.html">四中五中入选清华领军计划 高考可降60分录取</a></li>
+<li><a href="news201311085.html">牛首中心小学学生走进松鹤路小学 体验不同生活</a></li>
+</ul><ul class="newslist l26 f14">
+<li><a href="news201311086.html">襄城污水处理示范点 “人工湿地”变身小花园</a></li>
+<li><a href="news201311087.html">防汽车自燃三注意 不要随便改装汽车电路</a></li>
+<li><a href="news201311088.html">盘点各种万圣节南瓜美食 万圣节就吃它了 </a></li>
+<li><a href="news201311089.html">调查：中国国产汽车质量得到大幅提升</a></li>
+<li><a href="news2013110810.html">襄城8旬老人迷路14小时 市民报警帮其找到家人</a></li>
+</ul><ul class="newslist l26 f14">
+<li><a href="news2013110811.html">枣阳男子服刑20年不悔改 出狱后重操旧业再进宫</a></li>
+<li><a href="news2013110812.html">11月1日前处理交通违法不扣分 此消息系误传</a></li>
+<li><a href="news2013110813.html">高新区男子欠债不还打伤朋友 潜逃17年终落法网</a></li>
+<li><a href="news2013110814.html">襄阳店主无偿帮人看车 车被划伤后车主要求赔偿</a></li>
+<li><a href="news2013110815.html">襄城区南街路段轿车公交车相撞 3名乘客被困</a></li>
+</ul><ul class="newslist l26 f14">
+<li><a href="news2013110816.html">樊城一商户两个灯泡亮3分钟用1度电 引市民质疑</a></li>
+<li><a href="news2013110817.html">襄阳网友聚会变“慈善晚会” 募集善款6800元</a></li>
+<li><a href="news2013110818.html">网友写“光棍节”抢货攻略 襄阳网友也开始备战</a></li>
+<li><a href="news2013110819.html">是否禁放孔明灯襄阳网友有话说 多数支持禁放</a></li>
+<li><a href="news2013110820.html">襄阳“熊孩子”测试交白卷 90后老师温情留言</a></li>
+</ul><ul class="newslist l26 f14">
+<li><a href="news2013110821.html">樊城工商信息共享 市民可就近免费查询企业信息</a></li>
+<li><a href="news2013110822.html">襄州对60家超市进行清查 发现9家销售假冒产品</a></li>
+<li><a href="news2013110823.html">卧龙大桥启用流动测速 小车限速70公里/小时</a></li>
+<li><a href="news2013110824.html">襄阳7岁男娃通过测试跳至四年级 一年级仅读2月</a></li>
+<li><a href="news2013110825.html">品味英式美食 流连英国8大重要美食节</a></li>
+</ul><ul class="newslist l26 f14">
+<li><a href="news2013110826.html">法缩短我公民办理赴法旅游签证时间</a></li>
+<li><a href="news2013110827.html">新《旅游法》首月 赴韩跟团游骤减自由行增长</a></li>
+<li><a href="news2013110828.html">美食导航：女性便秘专用食谱 瘦身有奇效</a></li>
+<li><a href="news2013110829.html">中国汽车品牌闪耀约翰内斯堡国际车展</a></li>
+<li><a href="news2013110830.html">车联网不是汽车里装一块屏幕</a></li>
+</ul><ul class="newslist l26 f14">
+<li><a href="news2013110831.html">男子为躲债跑到襄阳 持钢珠手枪抢劫获刑10年</a></li>
+<li><a href="news2013110832.html">癌症女画家拍卖藏品 用于看病和救助困难学生</a></li>
+<li><a href="news2013110833.html">襄阳幼童校园打架划破脸 父母起诉幼儿园获赔</a></li>
+<li><a href="news2013110834.html">两车襄州国道相撞一人被困 消防官兵破拆施救</a></li>
+<li><a href="news2013110835.html">数千鸟儿楼顶“聚会” 专家解释可能是南迁候鸟</a></li>
+</ul><ul class="newslist l26 f14">
+<li><a href="news2013110836.html">襄阳一男子侍候岳母和病妻 用实际行动诠释爱</a></li>
+<li><a href="news2013110837.html">谷城25岁男子沉迷赌博弑母杀姐 扒火车出逃被抓</a></li>
+<li><a href="news2013110838.html">产品出口襄阳迎来无纸化报检 时间节省1倍以上</a></li>
+<li><a href="news2013110839.html">襄州社保补贴申报11月8日截止 逾期将不再受理</a></li>
+<li><a href="news2013110840.html">襄阳发票类投诉达百余件 餐饮装修旅游行业居多</a></li>
+</ul><ul class="newslist l26 f14">
+<li><a href="news2013110841.html">襄阳浓雾茫茫昨日今秋最冷 10趟航班取消或延误</a></li>
+<li><a href="news2013110842.html">襄阳投资2500万 14所学校师生将告别饮水难问题</a></li>
+<li><a href="news2013110843.html">襄阳加强平安校园建设 为学生制作安全明白卡</a></li>
+<li><a href="news2013110844.html">襄州中学评骨干教师 23名中9人是校领导及家属</a></li>
+<li><a href="news2013110845.html">襄阳污水直排灌溉沟渠 附近居民担心影响作物</a></li>
+</ul><ul class="newslist l26 f14">
+<li><a href="news2013110846.html">坚强父亲王忠文欲割肝救女 爱心纷至仍差30万</a></li>
+<li><a href="news2013110847.html">襄阳机场年吞吐量首破50万人次 通航城市达12个</a></li>
+<li><a href="news2013110848.html">襄阳现持续雾霾天气 市民扎堆看呼吸道疾病</a></li>
+<li><a href="news2013110849.html">男子砍伤债主潜逃17年 襄阳执着民警终擒逃犯</a></li>
+<li><a href="news2013110850.html">神奇3D画展空降襄阳 魔幻世界等你来体验</a></li>
+</ul><ul class="newslist l26 f14">
+<li><a href="news2013110851.html">襄阳市民问政栏目后 国道飞扬洒漏问题得到解决</a></li>
+<li><a href="news2013110852.html">襄阳相亲文化节即将开幕 3个报名点接受报名</a></li>
+<li><a href="news2013110853.html">襄阳相亲文化节 当天广场“相亲大巴”滚动发车</a></li>
+<li><a href="news2013110854.html">为方便相亲男女 樊城区报名点延至每晚9时 </a></li>
+<li><a href="news2013110855.html">襄阳相亲进行时：弟弟动静皆宜寻找时尚女孩</a></li>
+</ul><ul class="newslist l26 f14">
+<li><a href="news2013110856.html">汽车维修中经常容易被忽视常识性错误</a></li>
+<li><a href="news2013110857.html">中国汽车三包政策为何“平静”度过满月大关</a></li>
+<li><a href="news2013110858.html">广告称买房可上襄阳四中 教育局：没有政策依据</a></li>
+<li><a href="news2013110859.html">汽车电商 汽车之家上市的下一个故事</a></li>
+<li><a href="news2013110860.html">网传枣阳清潭“暴殄天物” 只要橘皮扔掉肉</a></li>
+</ul><ul class="newslist l26 f14">
+<li><a href="news2013110861.html">秋冬饮食多吃5种瓜 养胃健脾去秋燥</a></li>
+<li><a href="news2013110862.html">襄阳女孩急需接受骨髓移植 钱没凑够只能推迟</a></li>
+<li><a href="news2013110863.html">美食界的百搭王 看古城松饼演艺多彩酥脆人生</a></li>
+<li><a href="news2013110864.html">襄阳客运段担当列车上小伙心绞痛 车长紧急救人</a></li>
+<li><a href="news2013110865.html">襄阳邓城大道大修完工 竹条至曹湾段路面更平坦</a></li>
+</ul><ul class="newslist l26 f14">
+<li><a href="news2013110866.html">汽车电商疯狂大战“双11” 消费者迎大型团购</a></li>
+<li><a href="news2013110867.html">今日襄阳“立冬”冬在路上 双休降雨又降温</a></li>
+<li><a href="news2013110868.html">患癌男子从樊城某医院住院部9楼跳下 当场身亡</a></li>
+<li><a href="news2013110869.html">自主质量评价&quot;翻身&quot; 中国汽车2018到美国水平</a></li>
+<li><a href="news2013110870.html">襄阳最大非法集资案昨日开审 涉案金额2.1亿元</a></li>
+</ul><ul class="newslist l26 f14">
+<li><a href="news2013110871.html">襄阳27路公交爱心专座陆续铺上棉垫 温暖乘客</a></li>
+<li><a href="news2013110872.html">襄阳为小餐饮店发放统一工作服 提升餐饮店形象</a></li>
+<li><a href="news2013110873.html">襄州桥头附近一广告牌起火 危及附近烟花仓库</a></li>
+<li><a href="news2013110874.html">枣阳医保卡也收年费 系银行系统故障造成误收</a></li>
+<li><a href="news2013110875.html">去年保康发洪水冲断大桥 至今孩子只能趟水上学</a></li>
+</ul><ul class="newslist l26 f14">
+<li><a href="news2013110876.html">襄阳11月快递量将达200万件 相比去年增长3倍</a></li>
+<li><a href="news2013110877.html">襄阳投入320余万 购买1.6万株树木扮靓公路网</a></li>
+<li><a href="news2013110878.html">南漳7项目开工 投资总额13亿5个为农副产品加工</a></li>
+<li><a href="news2013110879.html">受天气影响 楚天襄阳相亲节延期至下周末举行</a></li>
+<li><a href="news2013110880.html">国家公共文化服务示范区 襄阳是鄂唯一入选城市</a></li>
+</ul><ul class="newslist l26 f14">
+<li><a href="news2013110881.html">元旦过年旅游线路地板价</a></li>
+<li><a href="news2013110882.html">襄阳版“非诚勿扰”将上演 快来报名当男女嘉宾</a></li>
+<li><a href="news2013110883.html">襄阳相亲文化节 牵手成功男女买房可打9.9折</a></li>
+<li><a href="news2013110884.html">襄阳相亲文化节报名火爆 报名人数已经超过400</a></li>
+<li><a href="news2013110885.html">错过初恋男友 26岁美丽女孩期盼与你情定襄阳</a></li>
+</ul><ul class="newslist l26 f14">
+<li><a href="news2013110886.html">襄阳一些铁树深秋发芽 专家解释原是气候作怪</a></li>
+<li><a href="news2013110887.html">襄阳秋季铁路线路大整治 为冬春运打下坚实基础</a></li>
+<li><a href="news2013110888.html">襄阳移动警务平台获公安部推荐 向全国公安演示</a></li>
+<li><a href="news2013110889.html">日本丰田研发未来变色车 能识别司机情绪与表情</a></li>
+<li><a href="news2013110890.html">老河口狠心父亲伪造送养协议书 9万5卖儿还赌债</a></li>
+</ul><ul class="newslist l26 f14">
+<li><a href="news2013110891.html">素食也美味 盘点美国7家顶级素食餐厅</a></li>
+<li><a href="news2013110892.html">襄阳大学生到指定机构参加岗前培训 可享补贴</a></li>
+<li><a href="news2013110893.html">保康一盗贼撬门作案划伤手 血流一地仍去偷</a></li>
+<li><a href="news2013110894.html">襄阳厨房吊柜坠落险些砸中小孩 商家赔偿200元</a></li>
+<li><a href="news2013110895.html">襄州投资3亿修水利 创国家级现代农业示范园</a></li>
+</ul><ul class="newslist l26 f14">
+<li><a href="news2013110896.html">“11.11”袭来 襄阳实体店联手降价抵制电商</a></li>
+<li><a href="news2013110897.html">宜城一服装店卖假“花花公子” 17万元服饰被查</a></li>
+<li><a href="news2013110898.html">襄阳复星天贸城昨开建 与马云“菜鸟网络”对接</a></li>
+<li><a href="news2013110899.html">“假如我是乘客”讨论会 襄阳的哥分享服务心得</a></li>
+<li><a href="news20131108100.html">假释期内再犯新罪 “零口供”襄阳案犯终获刑</a></li>
+</ul><ul class="newslist l26 f14">
+<li><a href="news20131108101.html">襄阳男子无证驾车致人死亡 冒名顶替者双双获刑</a></li>
+<li><a href="news20131108102.html">英国无人驾驶汽车将上路 2015年前投入20辆</a></li>
+<li><a href="news20131108103.html">日本确定汽车税收新方案 旨在加快淘汰老旧车辆</a></li>
+<li><a href="news20131108104.html">汽车电商欲分享“双11”盛宴</a></li>
+<li><a href="news20131108105.html">十二星座女人最钟爱的旅游胜地</a></li>
+</ul><ul class="newslist l26 f14">
+<li><a href="news20131108106.html">樊城八旬老人外出走失 警民合力帮她找到家</a></li>
+<li><a href="news20131108107.html">襄阳万山平坟栽梅 一期将栽种50品种4400株梅花</a></li>
+<li><a href="news20131108108.html">襄阳招录67名乡镇公务员 由村干部定向考试录用</a></li>
+<li><a href="news20131108109.html">襄阳一市民遇“儿嫖娼被抓”骗局 幸得邻居提醒</a></li>
+<li><a href="news20131108110.html">服装店结束经营 襄阳一对母女捐赠衣服200余件</a></li>
+</ul><ul class="newslist l26 f14">
+<li><a href="news20131108111.html">IT巨头抢食自动驾驶市场 汽车厂商如何应对</a></li>
+<li><a href="news20131108112.html">襄阳多所小学开武术课 百余小学生“舞刀弄枪”</a></li>
+<li><a href="news20131108113.html">襄阳设交通事故社会救助基金 “救命钱”有着落</a></li>
+<li><a href="news20131108114.html">南漳将用3到5年时间 50亿打造“中国有机谷”</a></li>
+<li><a href="news20131108115.html">襄阳本周末最低温仅9℃ 首发今秋大雾橙色预警</a></li>
+</ul><ul class="newslist l26 f14">
+<li><a href="news20131108116.html">襄城迎“大考” 有望成省级社区卫生服务示范区</a></li>
+<li><a href="news20131108117.html">保健品当药卖忽悠老人 宜城一体验中心被调查</a></li>
+<li><a href="news20131108118.html">襄阳四中五中各获1个“校长推荐上北大”名额 </a></li>
+<li><a href="news20131108119.html">襄阳一小学办“听写大会” 半数学生常见词卡壳</a></li>
+<li><a href="news20131108120.html">贵州父子遇不幸引关注 襄阳热心网友捐款500元</a></li>
+</ul><ul class="newslist l26 f14">
+<li><a href="news20131108121.html">男子冒充熟人网络诈骗20万 保康警方悬赏征线索</a></li>
+<li><a href="news20131108122.html">枣阳城区4辆摩托接连起火 初步调查系人为纵火</a></li>
+<li><a href="news20131108123.html">汽车电商一厢情愿 难入世界汽车巨头“法眼”</a></li>
 </ul>
 </div>
-
 </div>
-
 </div>
-
-				
 		</div>
 		
 	</div>
@@ -243,11 +302,10 @@ UI.each(UI.$$('button', 'span', UI.$('loginNav')), function(obj, index){
 			
 			<div class="bd bd2" style="position:relative">
 				<div class="Q-tpList">
-								<em class="f14 l21"><a target="_blank" bosszone="today1" href="#">家装步步为营 五大步骤打造完美卫浴间</a></em><div class="Q-tpWrap" bosszone="today1">
-<a target="_blank" class="pic" href="#"><img src="ad/jiazhuang1.jpg"></a><p class="l21">家居装修从选装修公司、定设计方案、选各种材料到施工、验收等，每一阶段都需要小心谨慎，步步为营，才能尽量避免装修遗憾的出现。<a target="_blank" href="http://view.news.qq.com/intouchtoday/index.htm?2590">[详细]</a>
-</p>
+								<em class="f14 l21"><a target="_blank" href="#">家装步步为营 五大步骤打造完美卫浴间</a></em><div class="Q-tpWrap">
+<a target="_blank" class="pic" href="#"><img src="../ad/jiazhuang1.jpg"></a><p class="l21">家居装修从选装修公司、定设计方案、选各种材料到施工、验收等，每一阶段都需要小心谨慎，步步为营，才能尽量避免装修遗憾的出现。<a target="_blank" href="#">[详细]</a></p>
 </div>
-				<ul class="other l26 f14" bosszone="today2">
+				<ul class="other l26 f14">
 				<li>
 <a target="_blank" href="#">原创</a> | 
 <a target="_blank" href="#">200平美式乡村复式 美女设计师晒家装</a>
@@ -263,7 +321,7 @@ UI.each(UI.$$('button', 'span', UI.$('loginNav')), function(obj, index){
 			</div>
 		</div>
 <!--
-<div class="ad_300_40" aria-disabled="true" tabindex="-1"><a href="http://autobaojun.com" target="_blank"><img src="http://mat1.gtimg.com/news/news2013/imgs/ad201308061423.jpg" bosszone="ad2" /></a></div>
+<div class="ad_300_40" aria-disabled="true" tabindex="-1"><a href="http://autobaojun.com" target="_blank"><img src="http://mat1.gtimg.com/news/news2013/imgs/ad201308061423.jpg"/></a></div>
 --><!--
 <div class="dongfengad" style="
     margin: -10px 0 10px 0;
@@ -274,27 +332,27 @@ a.lyl:hover { color:#cd0001 }
 </style>
 
 <div id="xwwbd">
-			<div class="hd hd2" bosszone="8dianlogo">
+			<div class="hd hd2">
 				<h2>装修效果</h2>
 			<span class="fr"><a href="#" target="_blank">更多</a></span></div>
 			<div class="bd bd2">
-<div class="Q-pList" bosszone="8dian1"><ul class="l29">
+<div class="Q-pList"><ul class="l29">
 <li>
-<a target="_blank" href="#"><img src="ad/xg01.jpg"><span></span></a><p><a target="_blank" href="#">典雅彰显个性 小清新</a></p>
+<a target="_blank" href="#"><img src="../ad/xg01.jpg"><span></span></a><p><a target="_blank" href="#">典雅彰显个性 小清新</a></p>
 </li>
 <li>
-<a target="_blank" href="#"><img src="ad/xg02.jpg"><span></span></a><p><a target="_blank" href="#">温馨美式 乡村风</a></p>
+<a target="_blank" href="#"><img src="../ad/xg02.jpg"><span></span></a><p><a target="_blank" href="#">温馨美式 乡村风</a></p>
 </li>
 <li>
-<a target="_blank" href="#"><img src="ad/xg01.jpg"><span></span></a><p><a target="_blank" href="#">典雅彰显个性 小清新</a></p>
+<a target="_blank" href="#"><img src="../ad/xg01.jpg"><span></span></a><p><a target="_blank" href="#">典雅彰显个性 小清新</a></p>
 </li>
 <li>
-<a target="_blank" href="#"><img src="ad/xg02.jpg"><span></span></a><p><a target="_blank" href="#">温馨美式 乡村风</a></p>
+<a target="_blank" href="#"><img src="../ad/xg02.jpg"><span></span></a><p><a target="_blank" href="#">温馨美式 乡村风</a></p>
 </li>
 </ul></div>
 			</div>
 		</div>
-<div class="ad_300_250" aria-disabled="true" tabindex="-1" bosszone="ad4">
+<div class="ad_300_250" aria-disabled="true" tabindex="-1">
 <!--News_Rectangle2_div AD begin...."l=News_Rectangle2&log=off"-->
 <div id="News_Rectangle2" style="width: 300px; height: 250px; display: block; position: relative;background-color:#ccc;" class="l_qq_com"></div>
 </div>
@@ -305,13 +363,13 @@ a.lyl:hover { color:#cd0001 }
 <div id="ctpanel" data-listidx="0">
 
 </div>
-<div class="ad_300_400" aria-disabled="true" tabindex="-1" bosszone="ad8">
+<div class="ad_300_400" aria-disabled="true" tabindex="-1">
 
 </div>
 
 	</div>
 </div>
-<div class="ad_1000_90 lastAd" aria-disabled="true" tabindex="-1" bosszone="ad9">
+<div class="ad_1000_90 lastAd" aria-disabled="true" tabindex="-1">
 <div id="News_Width4" style="width: 1000px; height: 90px; display: block; position: relative;" class="l_qq_com" ></div>
 	</div>
 <style>
@@ -320,7 +378,7 @@ a.lyl:hover { color:#cd0001 }
 .tcopyright a{color:#333;text-decoration: none;}
 .tcopyright a:hover{color:#bd0a01;text-decoration: underline;}
 </style>
-<div id="tcopyright" class="tcopyright" bosszone="footer" role="contentinfo">
+<div id="tcopyright" class="tcopyright" role="contentinfo">
 	<div>
   	<div class="en">Copyright © 2013 xyhui.net All Rights Reserved</div>
     <div>
