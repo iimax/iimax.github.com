@@ -318,7 +318,11 @@ div.searchautobox{ position:static; }
 #topMove .hd i.forStyle{ _background:none; }
 #moreNewsBtn span{ display:block }
 #sittingExtraBtn{ _display:none; }
-
+.ft {
+width: 1000px;
+overflow: hidden;
+margin: 0 auto;
+}
 /*xyhui*/
 ul.newslist {
 margin-left: 54px;
