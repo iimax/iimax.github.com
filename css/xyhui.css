@@ -122,6 +122,7 @@ a{outline:none}
 #news .Q-tpList .pic{margin:13px 19px 0 0; width:120px;height:80px; position:relative}
 #news .Q-tpList img{border:0}
 #news .Q-tpList em{font:20px/35px "微软雅黑","simhei";margin:8px 0 0;display:inline-block}
+#news .Q-tpList span.time {margin-right: 10px;font-size:10px;}
 #news .Q-tpList .red a{color:#b80b0b}
 #news .Q-tpList .red a:hover{color:#cd0001}
 #news .Q-tpWrap p{color:#818181; padding:1px 15px 0 0}
